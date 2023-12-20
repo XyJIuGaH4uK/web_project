@@ -1,0 +1,415 @@
+.heroImg {
+	width: 100%;
+	height: 80vh;
+	background-position: center center;
+	background-size: cover;
+	z-index: -1;
+	
+}
+
+.profileWrapper {
+	gap: 8px;
+	padding: 0px 8px;
+	z-index: 2;
+	height: 40px;
+	background-color: transparent;
+	border: 2px var(--bg) solid;
+	border-radius: 100px;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .2s;
+}
+
+.profileWrapper:before {
+	position: absolute;
+	bottom: 40px;
+	content: "";
+	background-color: var(--bg);
+	height: 120px;
+	width: 2px;
+}
+
+.profileWrapper:hover {
+	background-color: var(--bg);
+}
+
+.profile {
+	color: var(--orange);
+	height: 80%;
+	width: 80%;
+}
+
+.home {
+	overflow-y: hidden;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.heroGradient {
+	z-index: 1;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	height: 90vh;
+	background: linear-gradient(0deg, var(--bg) 20%, rgba(148, 14, 14, 0))
+}
+
+.titleWrapper {
+	top: 60vh;
+	text-wrap: nowrap;
+	overflow: visible;
+	z-index: 3;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+}
+
+.title1 {
+	line-height: 60%;
+	font-size: 12vw;
+	font-weight: 100;
+	letter-spacing: 0.3vw;
+}
+
+.title2 {
+	font-size: 15vw;
+	font-weight: 100;
+	letter-spacing: 0.3vw;
+	color: var(--orange);
+	text-shadow: var(--orange) 0px 0px 100px;
+}
+
+.artworkWrapper {
+	z-index: 2;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 12vh;
+	letter-spacing: 3px;
+}
+
+.artwork {
+	color: var(--white);
+	font-size: 1.8vh;
+}
+
+.artworkName {
+	color: var(--orange);
+	font-size: 2vh;
+	display: flex;
+	align-items: center;
+}
+
+.artworkIcon{
+	margin-top: 3px;
+	width: 24px;
+	height: auto;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	padding: 1.7vh 6.7vh;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background-color: var(--bg);
+	transform: translateX(-50%);
+}
+
+.headerLogo {
+	width: 50px;
+}
+
+.swipe {	
+	cursor: pointer;
+	z-index: 9999;
+	filter: opacity(60%);
+	color: var(--white);
+	border: 1px solid white;
+	border-radius: 30px;
+	padding: 3px 16px;
+	background: transparent;
+	position: absolute;
+	right: 5vw;
+	top: 30vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: .2s;
+}
+
+.swipe:hover {
+	transform: scaleX(1.1);
+	filter: opacity(100%);
+}
+
+.swipeLogo {	
+	width: 30px;
+	height: auto;
+}
+
+.swipeTxt {
+	letter-spacing: 3px;
+	font-size: 2vh;
+}
+
+.buttonWrapper, .buttonWrapper1 {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about {
+	margin-bottom: 50px;
+	color: var(--white);
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+
+.section {
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	height: 40vh;
+	transition: .2s;
+}
+
+.sectionCover:hover {
+	filter: opacity(70%);
+}
+
+.sectionCover {
+	transition: .2s;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: radial-gradient(circle at center, hsla(0, 0%, 0%, 0.171), rgba(0, 0, 0, 0.605));
+}
+
+.sectionTitle {
+	position: absolute;
+	z-index: 2;
+	font-size: 60px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 30px;
+}
+
+.platforms {
+	flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.genres {
+	margin: 100px 0px;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	padding: 50px 0px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.genresTopGradient {
+	z-index: -1;
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(var(--bg), #ED801B50);
+	border: none;
+}
+
+.genresBottomGradient {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(#ED801B50, var(--bg));
+	border: none;
+	bottom: -100px;
+}
+
+.genresContent {
+	gap: 20px;
+	border-radius: 30px;
+	padding: 30px;
+	color: var(--white);
+	background-color: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(4px);
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.genresList {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+	gap: 30px;
+	column-gap: 10px;
+	justify-items: start;
+}
+
+.genre {
+	letter-spacing: 2px;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.genresTitle {
+	font-size: 40px;
+	color: var(--orange);
+	letter-spacing: 4px;
+	font-weight: 100;
+}
+
+.genresTxt {
+	color: var(--white);
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.developers {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+}
+
+@media (orientation: landscape) {
+
+	.titleWrapper {
+		top: 57vh;
+	}
+
+	.title1 {
+		font-size: 15vh;
+	}
+	
+	.title2 {
+		font-size: 16vh;
+	}
+
+	.buttonWrapper {
+		align-self: center;
+		justify-self: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 80px 0px;
+		width: 50%;
+		margin-left: 22vw;
+		gap: 30px;
+	}
+
+	.section { 
+		height: 50vh;
+	}
+
+	.about {
+		grid-template-columns: 60% 40%;
+		grid-template-rows: auto auto;
+	}
+
+	.section:first-child {
+		grid-row: 1 / 3;
+		height: 100%;
+	}
+
+	.sectionTitle {
+		font-size: 100px;
+	}
+
+	.buttonWrapper1 {
+		width: 20%;
+	}
+
+	.platforms {
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+		gap: 40px;
+	}
+
+	.genres {
+		flex-direction: row-reverse;
+		align-items: flex-end;
+		height: 60vh;
+		justify-content: space-around;
+	}
+	
+	.genres > button {
+		margin-left: 70px;
+		width: 400px;
+	}
+
+	.genresContent {
+		justify-content: space-between;
+		height: 90%;
+		width: 50%;
+	}
+
+	.genresTitle {
+		font-size: 80px;
+	}
+
+	.genresList {
+		justify-content:space-between;
+		row-gap: 2vw;
+		padding-right: 200px;
+	}
+
+	.genre > img {
+		width: 3vw;
+	}
+
+	.genre {
+		font-weight: 100;
+		gap: 30px;
+		font-size: 1.6vw;
+	}
+
+	.genresTxt {
+		font-size: 30px;
+	}
+
+	.developers {
+		display: grid;
+		grid-template-columns: 38% 38%;
+		justify-content: space-between;
+		row-gap: 2vw;
+		padding: 0px 5vw;
+	}
+
+	.profileWrapper {
+		right: 5vw;
+	}
+}
